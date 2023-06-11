@@ -1,0 +1,786 @@
+    <!DOCTYPE html>
+
+        <head>
+            <meta charset="utf-8">
+            <!--titre de la page-->
+            <title>Portfolio Desperrois Lucas</title>
+            <meta name="description" content="Présentation de ma personne et de mes projets" />
+            <meta name="keywords"
+            content="Présentation,ldesperrois,github,portfolio,compétences,travail,développement,informatique,IUT lannion,BUT informatique,alternance" />
+            <!--Lien vers la page de style-->
+            <link rel="stylesheet" type="text/css" href="src/stylesheet.css" />
+            <script src="https://kit.fontawesome.com/1f726f8aec.js" crossorigin="anonymous"></script>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Comme:wght@200&family=Iceland&family=Jost:wght@300&display=swap" rel="stylesheet">
+            <script src="https://code.jquery.com/jquery-3.6.4.js"></script>  
+            <script src="src/app.js"></script>
+            
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            <script type="text/javascript">
+                (function(){
+                    emailjs.init("M1tJo2o4ZAoa1hAs9");
+                })();
+            </script>
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        </head>
+        <body>
+            <div class="d-flex justify-content-center ledivdelanavbar">
+                    
+                <nav class="navbaree">
+
+                    <div class="div1" > <!--ne pas oublier de faire un bouton pour revenir dessus-->
+                        <span id="nom"><a href="#acceuil" >Desperrois/></a></span>
+                    </div>
+
+                    <div class="div2">
+                    
+                        <ul class="liste_navbar" id="ma-liste">
+                            
+                            <li><a href="#aproposdemoi">A propos de moi</a></li>
+                            <li><a href="#compétences">Mes Compétences</a></li>  
+                            <li><a href="#mesprojets">Mes Projets</a></li>
+                            <li><a href="#contacte">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="image-container">
+                        <img src="src/images/icons8-menu.svg" class="menu-hamburger " alt="icone hamburger de bouton de la navbar en format téléphone" title="icone hamburger" >
+                    </div>
+                </nav>
+                
+        </div>
+            <header id="acceuil">
+                
+                
+                <div class="div-titre">
+                    <p class=" h1-header titre_haut_depage">Desperrois Lucas</p>
+                    <p class="display-4 text-center sous_paragraphe_titre">Etudiant en BUT Informatique</p>
+                    <a href="#aproposdemoi" class="bouton_accueil"></a>
+                    
+                </div>
+                <video autoplay="autoplay" muted="" loop="infinite" src="src/vidéo/AdobeStock_528999121.mov"></video>
+            </header>
+            <main>
+                <section id="aproposdemoi" class="section-présentation" >
+
+                    <div class="conteneur-section-présentation ">
+
+                        <div  class="divgaucheprésentation">
+
+                            <div class="conteneur-image reveal-1">
+                            <img  class="imagepresentation " src="src/images/lucas_desperrois.jpg" alt="" title="">
+                            </div>
+
+                            <div class="wrapper reveal-2">
+                                <a class="cta" href="src/CV_Desperrois_Lucas.pdf" download>
+                                  <span class="décale">Télécharger CV</span>
+                                  <span class="decale">
+                                    <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                      <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                        <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                        <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+                                      </g>
+                                    </svg>
+                                  </span> 
+                                </a>
+                              </div>
+
+                        </div>
+
+                        <div  class="divdroiteprésentation reveal-3">
+
+                            <h3 class="titre_présentation ">Qui suis-je ?</h3>
+                            <p class="texte-présentation">
+                                Je m’appelle Desperrois Lucas, j’ai 18 ans et je suis étudiant en BUT informatique à  <a target="_blank" href="https://iut-lannion.univ-rennes.fr">l’IUT de Lannion</a>. Passioné par la programmation
+                                je m’intéresse à de nombreux langages et je me suis notamment investi dans la programmation algorithmique et web.<br><br> Passioné par ces différents domaines, j’ai pu donc acquérir de nombreuses compétences.
+                                Il n’y a pas évidemment que l’informatique qui me passione. Je pratique beaucoup de sport que ce soit la course, le handball ou la musculation, j’apprécie le goût de l’effort que le sport apporte mais aussi celui de la cohésion  qui est essentiel. 
+                                <br><br>Vous trouverez sur ce portfolio mes travaux réalisés dans le cadre de mes études. Pour un peu plus d’informations, vous pouvez me contacter avec la section <a  href="#contacte">contact</a> qui se situe en bas de page. Vous pourrez également téléchargé mon CV sur le bouton ci-dessous.   
+                            
+                            </p>
+                            
+                        </div>
+
+                    </div>
+                </section>
+                <section class="sectioncompétences">
+
+                    <h1 class="titrecompétences" id="compétences">Mes Compétences</h1>
+                    <div class="container">
+                        <div class="row ">
+                            <div class="card competences_haut">
+                                <div class="card-image">
+                                    <img src="src/images/code-820275_1920.jpg " class="image-compétences">
+                                </div>
+                                
+                                <div class="card-texte">
+                                    <h1 class="titre-card">Développer des applications informatiques simples</h1>
+                                    <h3 class="sous-titre-card">Projets associés : </h3>
+                                    <div class="divs-card-texte">
+                                        <a  class="lien-compétences-projets" data-target="Puissance4" >Puissance4</a>
+                                        <a  class="lien-compétences-projets" data-target="Blanc"  >Cheval Blanc</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="card competences_haut">
+                                <div class="card-image">
+                                    <img src="src/images/Compétence2.jpeg" class="image-compétences">
+                                </div>
+                                <div class="card-texte">
+                                    <h1 class="titre-card">Appréhender des algorithmes simples</h1>
+                                    <h3 class="sous-titre-card">Projets associés : </h3>
+                                    <div class="divs-card-texte">
+                                        <a class="lien-compétences-projets" data-target="Stratégie">Stratégie</a>
+                                        <a class="lien-compétences-projets" data-target="dames">Les 8dames</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="src/images/Compétence_Installation.jpeg" class="image-compétences">  
+                                </div>
+                                <div class="card-texte">
+                                    <h1 class="titre-card">Installer et Configurer un poste de travail</h1>
+                                    <h3 class="sous-titre-card">Projets associés : </h3>
+                                    <div class="divs-card-texte">
+                                        <a class="lien-compétences-projets" data-target="Docker">Installation poste</a>
+                                        <a class="lien-compétences-projets">Installation Réseau</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="card competences_haut">
+                                <div class="card-image">
+                                    <img src="src/images/BDD.jpg" class="image-compétences">
+                                </div>
+                                <div class="card-texte">
+                                    <h1 class="titre-card">Concevoir et mettre en place une base de données à partie d'un cahier des charges</h1>
+                                    <h3 class="sous-titre-card">Projets associés : </h3>
+                                    <div class="divs-card-texte">
+                                        <a class="lien-compétences-projets" data-target="Trans">Transmusicale</a>
+                                        <a class="lien-compétences-projets" data-target="Parcoursup" >Parcoursup</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card competences_haut">
+                                <div class="card-image">
+                                    <img src="src/images/Besoins.jpeg" class="image-compétences">
+                                </div>
+                                <div class="card-texte">
+                                    <h1 class="titre-card">Identifier les besoins métiers des clients et des utilisateurs</h1>
+                                    <h3 class="sous-titre-card">Projets associés : </h3>
+                                    <div class="divs-card-texte">
+                                        <a class="lien-compétences-projets" data-target="Koh_Sport">Koh sport</a>
+                                        <a class="lien-compétences-projets" >Gestion projet</a>
+                                        
+                
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="src/images/Equipe.jpeg " class="image-compétences">
+                                </div>
+                                <div class="card-texte">
+                                    <h1 class="titre-card">Identifier ses aptitudes pour travailler dans une équipe</h1>
+                                    <h3 class="sous-titre-card">Projets associés : </h3>
+                                    <div class="divs-card-texte">
+                                        <a class="lien-compétences-projets" data-target="LVMH">LVMH</a>
+                                        <a class="lien-compétences-projets" data-target="Olympiade">Olympiade</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                <section class="section-projets" id="mesprojets">
+                    <h1 class="titre_projets">Mes Projets</h1>
+                    <div class="div_titre_projet">
+                        <p class="paragraphe_projets">un projet est un ensemble d'activités organisées en phases ou étapes et formant l'unité de gestion  permettant la réalisation d'un objetcif défini et précis.</p>
+                    </div>
+                    <div class="container-projets">
+                        <div  class="ninja " id="Puissance4">
+                            
+                            <div class="conteneur-apparition">
+                                <div class="div-titre-apparition">
+                                    <h1 class="apparition-titre">Puissance 4</h1>
+                                   
+                                    <i class="fa-sharp fa-solid fa-xmark     buton-apparition"></i>
+                                </div>
+                                <div>
+                                    <div class="image-apparition">
+                                        
+                                        <img src="src/images/puissance4.webp" class="image-grande">
+                                    </div>
+                                    <div class="Objectif-projets">
+                                        <h1 class="sous-titre-objectifs">Objectif du projet</h1>
+                                        <p class="texte-objectif">conception d'un Puissance 4 en langage C sans interface graphiquee sur le terminal</p>
+                                        <a href="https://github.com/ldesperrois/Project_Developpement/blob/master/Puissance4.c" target="_blank" class="lien-github">Lien Github</a>
+                                    </div>
+                                </div>
+                                <div class="apparition-texte">
+                                    
+                                    <div class="apparition-gauche">
+                                        <h1 class="sous-titre-apparition">Compétences Acquises</h1>
+                                        <p class="texte-projets-apparition">Avec ce projets  j'ai appris à implementer des conceptions simples<br> et faire des essaies et évaluer des résultats en regard des spécifications.</p>
+                                    </div>
+                                    <div class="apparition-droite">
+                                        <h1 class="sous-titre-apparition">Langages et Outils utilisés</h1>
+                                        <p class="texte-projets-apparition">Langage C,Doxygen(Documentation)</p>
+                                    </div>
+                                    
+                                </div>
+                               
+                            </div>
+                            
+                        </div>
+                        <div  class="ninja " id="Stratégie">
+                            
+                            <div class="conteneur-apparition">
+                                <div class="div-titre-apparition">
+                                    <h1 class="apparition-titre texte-change">Stratégie Puissance4</h1>
+                                    <i class="fa-sharp fa-solid fa-xmark    buton-apparition"></i>
+                                </div>
+                                <div class="image-apparition">
+                                    
+                                    <img src="src/images/strat.jpg" class="image_special">
+                                </div>
+                                <div class="Objectif-projets">
+                                    <h1 class="sous-titre-objectifs">Objectif du projet</h1>
+                                    <p class="texte-objectif">Conception d'une Stratégie de Puissance 4 pour l'ordinnateur en Langage C. Comparer son algorihtme face à d'autres groupes.</p>
+                                    <a href="https://github.com/ldesperrois/Project_Developpement/blob/master/Puissance_4_bot.c" target="_blank" class="lien-github">Lien Github</a>
+                                </div>
+                                <div class="apparition-texte">
+                                    
+                                    <div class="apparition-gauche">
+                                        <h1 class="sous-titre-apparition">Compétences Acquises</h1>
+                                        <p class="texte-projets-apparition">J'ai appris à analyser un problème avec méthode et à comparer des algorithmes pour des problèmes simples.</p>
+                                    </div>
+                                    <div class="apparition-droite">
+                                        <h1 class="sous-titre-apparition">Langages et Outils utilisés</h1>
+                                        <p class="texte-projets-apparition">Langage C,Doxygen(Documentation)</p>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div  class="ninja " id="Koh_Sport">
+                            
+                            <div class="conteneur-apparition">
+                                <div class="div-titre-apparition">
+                                    <h1 class="apparition-titre texte-change">KOH SPORT</h1>
+                                    <i class="fa-sharp fa-solid fa-xmark  buton-apparition"></i>
+                                </div>
+                                <div class="image-apparition">
+                                    
+                                    <img src="src/images/koh_sport.png" class="image_special">
+                                </div>
+                                <div class="Objectif-projets">
+                                    <h1 class="sous-titre-objectifs">Objectif du projet</h1>
+                                    <p class="texte-objectif">Conception d'un Site Vitrine à partir des besoins et exigences d'un client.</p>
+                                    <a href="https://ldesperrois.github.io/Website/" target="_blank" class="lien-github">Lien Site</a>
+                                </div>
+                                <div class="apparition-texte">
+                                    
+                                    <div class="apparition-gauche">
+                                        <h1 class="sous-titre-apparition">Compétences Acquises</h1>
+                                        <p class="texte-projets-apparition">Je suis capable d'appréhender les besoins du client et de mettre en place les outils de gestion de projets. J'ai aussi appris
+                                        à identifier les acteurs et différents cycles de développement.</p>
+                                    </div>
+                                    <div class="apparition-droite">
+                                        <h1 class="sous-titre-apparition">Langages et Outils utilisés</h1>
+                                        <p class="texte-projets-apparition">HTML/CSS, Figma, GitLaB</p>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div  class="ninja " id="Docker">
+                            
+                            <div class="conteneur-apparition">
+                                <div class="div-titre-apparition">
+                                    <h1 class="apparition-titre texte-change">Installation Poste</h1>
+                                    <i class="fa-sharp fa-solid fa-xmark  buton-apparition"></i>
+                                </div>
+                                <div class="image-apparition">
+                                    
+                                    <img src="src/images/installation_poste.jpg" class="image-grande" >
+                                </div>
+                                <div class="Objectif-projets">
+                                    <h1 class="sous-titre-objectifs">Objectif du projet</h1>
+                                    <p class="texte-objectif">L'objectif est la mise en place de briques logicielles s'intégrant à un environnement dé développement complexe.Le projet permet de générer des rapport comemrciaux en PDF.</p>
+                                    <a href="https://github.com/ldesperrois/Generateur_PDF" target="_blank" class="lien-github">Lien Github</a>
+                                </div>
+                                <div class="apparition-texte">
+                                    
+                                    <div class="apparition-gauche">
+                                        <h1 class="sous-titre-apparition">Compétences Acquises</h1>
+                                        <p class="texte-projets-apparition">Je suis capable d'identifier les différents composants d'un système numérique. Je sais utiliser les fonctionnalités de base d'un système multitâches et installer un système d'exploitation et des outils de développement</p>
+                                    </div>
+                                    <div class="apparition-droite">
+                                        <h1 class="sous-titre-apparition">Langages et Outils utilisés</h1>
+                                        <p class="texte-projets-apparition">PHP, Docker, Shell, HTML/CSS</p>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div  class="ninja " id="Trans">
+                            
+                            <div class="conteneur-apparition">
+                                <div class="div-titre-apparition">
+                                    <h1 class="apparition-titre texte-change">Transmusicale</h1>
+                                    <i class="fa-sharp fa-solid fa-xmark  buton-apparition"></i>
+                                </div>
+                                <div class="image-apparition">
+                                    
+                                    <img src="src/images/trans.png" class="image-grande"  >
+                                </div>
+                                <div class="Objectif-projets">
+                                    <h1 class="sous-titre-objectifs">Objectif du projet</h1>
+                                    <p class="texte-objectif">L'objectif de ce projet est de concevoir et mettre en place une base de données à partir d'un cahier des charges client.</p>
+                                    <a href="https://github.com/ldesperrois/Transmusicales" target="_blank" class="lien-github">Lien Github</a>
+                                </div>
+                                <div class="apparition-texte">
+                                    
+                                    <div class="apparition-gauche">
+                                        <h1 class="sous-titre-apparition">Compétences Acquises</h1>
+                                        <p class="texte-projets-apparition">Je suis capable de mettre à jour et interroger une base de données relationelle. Je sais aussi concevoir une base de données relationelle à partir d'un cahier des charges précis</p>
+                                    </div>
+                                    <div class="apparition-droite">
+                                        <h1 class="sous-titre-apparition">Langages et Outils utilisés</h1>
+                                        <p class="texte-projets-apparition">PostgreSQL, SqlWorkbench, Visual Paradigm</p>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div  class="ninja " id="dames">
+                            
+                            <div class="conteneur-apparition">
+                                <div class="div-titre-apparition">
+                                    <h1 class="apparition-titre texte-change">Les 8 dames</h1>
+                                    <i class="fa-sharp fa-solid fa-xmark  buton-apparition"></i>
+                                </div>
+                                <div class="image-apparition">
+                                    
+                                    <img src="src/images/chess-g1a8a68525_1280.jpg" class="image-apa">
+                                </div>
+                                <div class="Objectif-projets">
+                                    <h1 class="sous-titre-objectifs">Objectif du projet</h1>
+                                    <p class="texte-objectif">Résoudre le problème des "8dames" en Python permettant la comparaison d'algorithmes qui résolvent ce problème</p>
+                                    <a href="https://github.com/ldesperrois/8-dames/tree/main" target="_blank" class="lien-github">Lien Github</a>
+                                </div>
+                                <div class="apparition-texte">
+                                    
+                                    <div class="apparition-gauche">
+                                        <h1 class="sous-titre-apparition">Compétences Acquises</h1>
+                                        <p class="texte-projets-apparition">Ce projet m'a permis d'apprendre à analyser un problème avec méthode et de comparer des algorithmes pour des problèmes classiques.
+                                            Il m'a aussi permis de savoir formaliser et mettre en oeuvre des outils mathématiques pour l'informatique. 
+                                        </p>
+                                    </div>
+                                    <div class="apparition-droite">
+                                        <h1 class="sous-titre-apparition">Langages et Outils utilisés</h1>
+                                        <p class="texte-projets-apparition">Python</p>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div  class="ninja " id="Portfo">
+                            
+                            <div class="conteneur-apparition">
+                                <div class="div-titre-apparition">
+                                    <h1 class="apparition-titre texte-change">Portfolio</h1>
+                                    <i class="fa-sharp fa-solid fa-xmark  buton-apparition"></i>
+                                </div>
+                                <div class="image-apparition">
+                                    
+                                    <img src="src/images/essaye.png" class="image-grande">
+                                </div>
+                                <div class="Objectif-projets">
+                                    <h1 class="sous-titre-objectifs">Objectif du projet</h1>
+                                    <p class="texte-objectif">Création d'un site vitrine qui présente me projets et compétences dans le développement informatique</p>
+                                    <a href="https://github.com/ldesperrois/essaye.png" target="_blank" class="lien-github">Lien Github</a>
+                                </div>
+                                <div class="apparition-texte">
+                                    
+                                    <div class="apparition-gauche">
+                                        <h1 class="sous-titre-apparition">Compétences Acquises</h1>
+                                        <p class="texte-projets-apparition">Ce projet m'a permis d'apprendre à modéliser une maquette pour un site vitrine et acquérir des compétences en javascript que j'ai appris en autodidacte.
+                                        </p>
+                                    </div>
+                                    <div class="apparition-droite">
+                                        <h1 class="sous-titre-apparition">Langages et Outils utilisés</h1>
+                                        <p class="texte-projets-apparition">HTML/CSS, Javascript, Figma</p>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div  class="ninja " id="LVMH">
+                            
+                            <div class="conteneur-apparition">
+                                <div class="div-titre-apparition">
+                                    <h1 class="apparition-titre texte-change">Environnement Economique</h1>
+                                    <i class="fa-sharp fa-solid fa-xmark  buton-apparition"></i>
+                                </div>
+                                <div class="image-apparition">
+                                    
+                                    <img src="src/images/LVMH.png" class="image-apa">
+                                </div>
+                                <div class="Objectif-projets">
+                                    <h1 class="sous-titre-objectifs">Objectif du projet</h1>
+                                    <p class="texte-objectif">Présentation du groupeve LVMH et présentation de sa RSE avec sa fiche caractéristique </p>
+                                    <a href="https://github.com/ldesperrois/RSE-LVMH" target="_blank" class="lien-github">Lien Github</a>
+                                </div>
+                                <div class="apparition-texte">
+                                    
+                                    <div class="apparition-gauche">
+                                        <h1 class="sous-titre-apparition">Compétences Acquises</h1>
+                                        <p class="texte-projets-apparition"> Avec ce projet je suis désormais capable d'appréhender l'écosystème écnomique numérique en organisant sa recherche documentaire et son travai d'équipe à l'aide d'outils spécifiques
+                                        </p>
+                                    </div>
+                                    <div class="apparition-droite">
+                                        <h1 class="sous-titre-apparition">Langages et Outils utilisés</h1>
+                                        <p class="texte-projets-apparition">Canva, Notion, Google doc, Discord</p>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div  class="ninja " id="Olympiade">
+                            
+                            <div class="conteneur-apparition">
+                                <div class="div-titre-apparition">
+                                    <h1 class="apparition-titre texte-change">Team Building</h1>
+                                    <i class="fa-sharp fa-solid fa-xmark  buton-apparition"></i>
+                                </div>
+                                <div class="image-apparition">
+                                    
+                                    <img src="src/images/Olympiade.png" class="image-apa">
+                                </div>
+                                <div class="Objectif-projets">
+                                    <h1 class="sous-titre-objectifs">Objectif du projet</h1>
+                                    <p class="texte-objectif">Réalisation en groupe de 4 d'une journée fictive  de Team building pour l'entreprise Decathlon avec flyers et video de teasing</p>
+                                    <a href="https://youtu.be/SMbJcDGoryQ" target="_blank" class="lien-github">Lien Teaser</a>
+                                </div>
+                                <div class="apparition-texte">
+                                    
+                                    <div class="apparition-gauche">
+                                        <h1 class="sous-titre-apparition">Compétences Acquises</h1>
+                                        <p class="texte-projets-apparition">Je suis capable de découvrir les aptitudes requises selon les différents secteurs d'activité. Je peux identifier les status, les fonctions et les rôles de chaque membre de l'équipe
+                                            . Je sais aussi acuqérir les compétences interpersonelles pour travailler en équipe
+                                        </p>
+
+                                    </div>
+                                    <div class="apparition-droite">
+                                        <h1 class="sous-titre-apparition">Langages et Outils utilisés</h1>
+                                        <p class="texte-projets-apparition">Canva, Trello, Davinci Resolve</p>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div  class="ninja " id="Parcoursup">
+                            
+                            <div class="conteneur-apparition">
+                                <div class="div-titre-apparition">
+                                    <h1 class="apparition-titre texte-change">Parcoursup</h1>
+                                    <i class="fa-sharp fa-solid fa-xmark  buton-apparition"></i>
+                                </div>
+                                <div class="image-apparition">
+                                    
+                                    <img src="src/images/Parcoursup.png" class="image-grande">
+                                </div>
+                                <div class="Objectif-projets">
+                                    <h1 class="sous-titre-objectifs">Objectif du projet</h1>
+                                    <p class="texte-objectif">L'objectif de ce projet était d'implémenter,peupler et de concevoir des vues pour exploiter des données pour avoir des statistiques </p>
+                                    <a  href="https://github.com/ldesperrois/Parcoursup" target="_blank" class="lien-github">Lien Github</a>
+                                </div>
+                                <div class="apparition-texte">
+                                    
+                                    <div class="apparition-gauche">
+                                        <h1 class="sous-titre-apparition">Compétences Acquises</h1>
+                                        <p class="texte-projets-apparition"> 
+                                            Je suis capable de mettre à jour et interroger une base de données relationelle. Je sais aussi visualiser des données puis concevoir une base de données relationelle à partir d'un cahier des charges
+                                        </p>
+
+                                    </div>
+                                    <div class="apparition-droite">
+                                        <h1 class="sous-titre-apparition">Langages et Outils utilisés</h1>
+                                        <p class="texte-projets-apparition">PostgreSQL, Python</p>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div  class="ninja " id="Blanc">
+                            
+                            <div class="conteneur-apparition">
+                                <div class="div-titre-apparition">
+                                    <h1 class="apparition-titre texte-change">Cheval Blanc</h1>
+                                    <i class="fa-sharp fa-solid fa-xmark  buton-apparition"></i>
+                                </div>
+                                <div class="image-apparition">
+                                    
+                                    <img src="src/images/Cheval_Blanc.jpeg" class="image-apa">
+                                </div>
+                                <div class="Objectif-projets">
+                                    <h1 class="sous-titre-objectifs">Objectif du projet</h1>
+                                    <p class="texte-objectif">L'objectif de ce projet était de concevoir une IHM en JavaFx pour application de gestion d'hôtel </p>
+                                    <a href="#" target="_blank" class="lien-github">Lien Github</a>
+                                </div>
+                                <div class="apparition-texte">
+                                    
+                                    <div class="apparition-gauche">
+                                        <h1 class="sous-titre-apparition">Compétences Acquises</h1>
+                                        <p class="texte-projets-apparition"> 
+                                            Je suis capable d'implémenter une application à partir des spécifications simples. Je peux concevoir une application à l'aide d'UML à partir de spécifications simples et d'évaluer une application. Il m'a aussi permis de savoir réaliser une IHM. 
+                                        </p>
+
+                                    </div>
+                                    <div class="apparition-droite">
+                                        <h1 class="sous-titre-apparition">Langages et Outils utilisés</h1>
+                                        <p class="texte-projets-apparition">JavaFx, Figma</p>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div  class="ninja " id="Réseau">
+                            
+                            <div class="conteneur-apparition">
+                                <div class="div-titre-apparition">
+                                    <h1 class="apparition-titre texte-change">Installation Réseau</h1>
+                                    <i class="fa-sharp fa-solid fa-xmark  buton-apparition"></i>
+                                </div>
+                                <div class="image-apparition">
+                                    
+                                    <img src="src/images/Apache.jpeg" class="image-apa">
+                                </div>
+                                <div class="Objectif-projets">
+                                    <h1 class="sous-titre-objectifs">Objectif du projet</h1>
+                                    <p class="texte-objectif">L'objectif de ce projet est d'herberger un site web dynamique sur apache en configurant le serveur, le PHP et le Sql sur une VM debian</p>
+                                    <a href="#" target="_blank" class="lien-github">Lien Github</a>
+                                </div>
+                                <div class="apparition-texte">
+                                    
+                                    <div class="apparition-gauche">
+                                        <h1 class="sous-titre-apparition">Compétences Acquises</h1>
+                                        <p class="texte-projets-apparition"> 
+                                            Je suis capable d'identifier les différents composants d'un système numérique.
+                                            Je sais utiliser les fonctionnalités de bases dun système multitâches.
+                                            Je peux installer et configurer un système d'exploitation et des outils de développements
+                                            . Puis j'ai aussi les compétences pour configrer un poste de travail dans une entreprise.                                    
+                                        </p>
+
+                                    </div>
+                                    <div class="apparition-droite">
+                                        <h1 class="sous-titre-apparition">Langages et Outils utilisés</h1>
+                                        <p class="texte-projets-apparition">Debian, PHP, MySql, HTML/CSS</p>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div  class="ninja " id="gestion_projet">
+                            
+                            <div class="conteneur-apparition">
+                                <div class="div-titre-apparition">
+                                    <h1 class="apparition-titre texte-change">Gestion de projet</h1>
+                                    <i class="fa-sharp fa-solid fa-xmark  buton-apparition"></i>
+                                </div>
+                                <div class="image-apparition">
+                                    
+                                    <img src="src/images/gestion_orga.png" class="image-grande">
+                                </div>
+                                <div class="Objectif-projets">
+                                    <h1 class="sous-titre-objectifs">Objectif du projet</h1>
+                                    <p class="texte-objectif">L'objectif de ce projet était de rédiger tous les documents nécéssaires à la conception d'une application informatique (Note De Cadrage, SEL, OT, Matrice RACI, Diagramme de Gantt réel et prévisionnel, Estimation des charges et des coûts ).</p>
+                                    <a href="#" target="_blank" class="lien-github">Lien Github</a>
+                                </div>
+                                <div class="apparition-texte">
+                                    
+                                    <div class="apparition-gauche">
+                                        <h1 class="sous-titre-apparition">Compétences Acquises</h1>
+                                        <p class="texte-projets-apparition"> 
+                                            Je sais appréhender les besoins client/utilisateur et mettre en place les outils de gestion de projet.
+                                            J'ai appris à identifier les acteurs et les différentes phases d'un cycle de développement                                  
+                                        </p>
+
+                                    </div>
+                                    <div class="apparition-droite">
+                                        <h1 class="sous-titre-apparition">Langages et Outils utilisés</h1>
+                                        <p class="texte-projets-apparition">Canva, Word, ProjectLibre(Diagramme de Gantt)</p>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="div-ligne-projets ligne-haut">
+                            <div class="card-projets margehautbas" id="projet_puissance4">
+                                <img  class="image-card_projets"src="src/images/puissance4.webp">
+                                <div class="contient-texte ">
+                                    <h1 class="texte-projets">Puissance 4</h1>
+                                    <button class="space-btn" data-target="Puissance4">En Savoir plus</button>
+                                </div>
+                            </div>
+                            <div class="card-projets margehautbas image-bizarre">
+                                <img  class="image-card_projets"src="src/images/strat.jpg">
+                                <div class="contient-texte ">
+                                    <h1 class="texte-projets"> Stratégie</br>Puissance 4</h1>
+                                    <button class="space-btn" data-target="Stratégie">En Savoir plus</button>
+                                </div>
+                                
+                            </div>
+                            <div class="card-projets margehautbas">
+                                <img  class="image-card_projets" src="src/images/koh_sport.png">
+                                <div class="contient-texte ">
+                                    <h1 class="texte-projets">KOH SPORT</h1>
+                                    <button class="space-btn" data-target="Koh_Sport">En Savoir plus</button>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="div-ligne-projets ligne-bas ">
+                            <div class="card-projets margehautbas">
+                                    <img  class="image-card_projets"src="src/images/chess-g1a8a68525_1280.jpg">
+                                    <div class="contient-texte ">
+                                        <h1 class="texte-projets">Problème <br> 8 dames</h1>
+                                        <button class="space-btn" data-target="dames">En Savoir plus</button>
+                                    </div>
+                            </div>
+                            <div class="card-projets margehautbas">
+                                <img  class="image-card_projets"src="src/images/trans.png">
+                                <div class="contient-texte ">
+                                    <h1 class="texte-projets">Transmusicales</h1>
+                                    <button class="space-btn" data-target="Trans">En Savoir plus</button>
+                                            
+                                </div>
+                                    
+                            </div>
+                            <div class="card-projets margehautbas">
+                                <img  class="image-card_projets images-spécial" src="src/images/LVMH.png">
+                                <div class="contient-texte ">
+                                    <h1 class="texte-projets">Environnement<br> Economique</h1>
+                                    <div class="div-bouton">
+                                        <button class="space-btn" data-target="LVMH">En Savoir plus</button>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="div-ligne-projets ligne-handicapé">
+                            <div class="card-projets margehautbas">
+                                <img  class="image-card_projets" src="src/images/installation_poste.jpg">
+                                <div class="contient-texte ">
+                                    <h1 class="texte-projets">Installation Poste</h1>
+                                    <button class="space-btn" data-target="Docker">En Savoir plus</button>
+                                </div>
+                            </div>
+                            <div class="card-projets margehautbas ">
+                                <img  class="image-card_projets"src="src/images/essaye.png">
+                                <div class="contient-texte ">
+                                    <h1 class="texte-projets">Portfolio</h1>
+                                    <button class="space-btn" data-target="Portfo">En Savoir plus</button>
+                                </div>
+                                        
+                            </div>
+                            <div class="card-projets margehautbas">
+                                <img  class="image-card_projets images-spécial" src="src/images/Olympiade.png">
+                                <div class="contient-texte ">
+                                    <h1 class="texte-projets">Team Building</h1>
+                                    <button class="space-btn" data-target="Olympiade" >En Savoir plus</button>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="div-ligne-projets ligne-bas ">
+                            <div class="card-projets margehautbas">
+                                <img  class="image-card_projets"src="src/images/Parcoursup.png">
+                                <div class="contient-texte ">
+                                    <h1 class="texte-projets">Parcoursup</h1>
+                                    <button class="space-btn" data-target="Parcoursup" >En Savoir plus</button>
+                                </div>
+                            </div>
+                            <div class="card-projets margehautbas">
+                                <img  class="image-card_projets"src="src/images/Apache.jpeg">
+                                <div class="contient-texte ">
+                                    <h1 class="texte-projets">Installation Réseau</h1>
+                                    <button class="space-btn" data-target="Réseau">En Savoir plus</button>
+                                </div>
+                                            
+                            </div>
+                            <div class="card-projets margehautbas">
+                                <img  class="image-card_projets images-spécial" src="src/images/Cheval_Blanc.jpeg">
+                                <div class="contient-texte ">
+                                    <h1 class="texte-projets">Cheval Blanc</h1>
+                                     <button class="space-btn"  data-target="Blanc" >En Savoir plus</button>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="ligne-projets-seul">
+                            <div class="card-projets-seuls">
+                                <img class="image-projet-seul" src="src/images/gestion_orga.png">
+                                <div class="contient-texte">
+                                    <h1 class="texte-projets">Gestion Projets</h1>
+                                    <button class="space-btn" data-target="gestion_projet">En Savoir plus</button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                
+
+                </section>
+            </main>
+            <!--partie contact avec les mails-->
+            <footer class="contact" id="contacte">
+                <h1 class="titre-contact">Contactez moi</h1>
+                <div class="formulaire-contact">
+                    <div class="modal-input">
+                        <input type="text" placeholder="Nom" id="fullName" required/> 
+                    </div>
+                    <div class="modal-input">
+                        <input type="email"  placeholder="Email" id="email_id" required   />
+                    </div>
+                    <div class="message-modal-input">
+                        <textarea placeholder="Message" id="message" required ></textarea>
+                    </div>
+                    <div class="formulaire-bouton">
+                        <button class="bouton_contact" id="contacto" onclick="SendMail()">Send</button>
+                    </div>
+                </div>
+            </footer>
+        </body>
+        
+    </html>
