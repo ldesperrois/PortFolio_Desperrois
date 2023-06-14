@@ -369,11 +369,23 @@ path.two {
 .projet-header{
     display: flex;
 }
-
-
+.div-apparitions-image{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.div-apparitions-texte{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
 .conteneur-apparition{
   border-radius: 20px;
-  width: 40%;
+  width: 1000px;
   max-height: 93vh;
   overflow-y: auto;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
@@ -438,7 +450,6 @@ path.two {
 .lien-github{
     font-size: 20px;
     width: auto;
-    height: auto;
     color: #fff;
     border-color: #fff;
     border-style: solid;
@@ -446,6 +457,11 @@ path.two {
     text-decoration: none;
     margin-top: 1%;
     cursor: pointer;
+    white-space: nowrap;
+}
+
+.github{
+    margin-left: 2%;
 }
 
 .lien-github:hover{
@@ -459,12 +475,12 @@ path.two {
     background: none;
 }
 .sous-titre-apparition{
-    margin-bottom: 3%;
+    
     font-size: 2em;
     text-align: center;
 }
 .sous-titre-objectifs{
-    margin-bottom: 1%;
+    margin-bottom: 3%;
     font-size: 2em;
 }
 .apparition-droite{
@@ -479,6 +495,16 @@ path.two {
 .flou-wrapper{
     position: relative;
 }
+.preuve{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+div.preuve> h1.sous-titre-objectifs {
+        margin-right: 20px;
+}
 .div-titre-apparition{
     display: flex;
     justify-content: center;
@@ -489,6 +515,8 @@ path.two {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 .image-apa{
@@ -497,7 +525,8 @@ path.two {
     
 }
 .image_special{
-    width: 70%!important;
+    width: 450px;
+    margin-left: 5%;
 }
 .try{
     font-size: 2em;
@@ -1059,9 +1088,7 @@ i:hover{
         
     }
     
-    .conteneur-apparition{
-        width: 65%;
-    }
+    
     .row{
         
         flex-direction: column;
@@ -1090,13 +1117,6 @@ i:hover{
 }
 
 
-@media screen and (max-width:1000px) and (min-width:800px){
-    .conteneur-apparition{
-        width: 70%;
-        top: 55%;
-    }
-
-}
 
 /*media screen pour l'appartion du menu en mode portable ou petit écran */
 @media screen  and (max-width:1000px) {
@@ -1205,10 +1225,7 @@ i:hover{
         margin-top: 3%;
     }
     
-    .conteneur-apparition{
-        width: 85%;
-        height: auto;
-    }
+    
     .sous_paragraphe_titre{
         font-size: 40px;
     }
