@@ -15,6 +15,9 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    min-height: 100vh;
+}
 .ledivdelanavbar{
     z-index: 100;
     top: 0;
@@ -240,7 +243,8 @@ nav>div+div>ul>li:last-child{
     flex-direction: row;
     justify-content: center;
     background-color: #fff;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 3px 7px 10px 2px rgba(0,0,0,0.35); 
+    box-shadow: 3px 7px     10px 2px rgba(0,0,0,0.35);
 
 }
 .divgaucheprésentation{
@@ -380,12 +384,14 @@ path.two {
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
 }
 .conteneur-apparition{
   border-radius: 20px;
-  width: 1000px;
+  width: 55%;
+  
+  padding: 10px;
   max-height: 93vh;
   overflow-y: auto;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
@@ -395,13 +401,19 @@ path.two {
   
     
 }
+.image-github{
+    width: 50%;
+}
 .apparition-texte{
     width: 100%;
-    height: 32%;
+    text-align: center;
     display: flex;
+    height: 50%;
+    justify-content: flex-end;
     flex-direction: column; 
     align-items: center;
     flex-wrap: wrap;
+    padding: 10px;
     
 }
 
@@ -418,25 +430,11 @@ path.two {
 }
 .apparition-titre{
     text-align: center;
-    font-size: 3.5em;
+    font-size: 1.5em;
     margin-left: 20px;
 }
-.texte-projets-apparition{
-    margin-top: 3%;
-    font-size: 20px;
-    margin-left: 2%;
-    margin-right: 2%;
-    text-align: center ;   
-    font-weight: 550;
-    
-}
-.texte-objectif{
-    font-size: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
-    font-weight:550;
-}
+
+
 
 .Objectif-projets{
     display: flex;
@@ -475,13 +473,14 @@ path.two {
     background: none;
 }
 .sous-titre-apparition{
-    
-    font-size: 2em;
+    white-space: nowrap;
+    font-size: 1.5em;
     text-align: center;
 }
 .sous-titre-objectifs{
     margin-bottom: 3%;
-    font-size: 2em;
+    font-size: 1.5em;
+    white-space: nowrap;
 }
 .apparition-droite{
     width: 50%;
@@ -500,7 +499,7 @@ path.two {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 div.preuve> h1.sous-titre-objectifs {
         margin-right: 20px;
@@ -515,8 +514,9 @@ div.preuve> h1.sous-titre-objectifs {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 5%;
-    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    padding: 20px;
 }
 
 .image-apa{
@@ -525,8 +525,11 @@ div.preuve> h1.sous-titre-objectifs {
     
 }
 .image_special{
-    width: 450px;
-    margin-left: 5%;
+    
+    width: 100%;
+    max-width: 500px;
+    max-height: 250px;
+    object-fit: cover;
 }
 .try{
     font-size: 2em;
@@ -590,7 +593,22 @@ div.preuve> h1.sous-titre-objectifs {
     font-weight: bold;
     white-space: nowrap;
 }
-
+.texte-projets-apparition{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 800;
+}
+.texte-objectif{
+    font-size: auto;
+    text-align: center;
+    font-weight: 800;
+}
+.sous-titre-objectifs{
+    text-align: center;
+}
+.Objectif-projets{
+    width: 100%;
+}
 .container{
     padding-left: 10em;
     padding-right: 10em;
@@ -893,6 +911,7 @@ div.preuve> h1.sous-titre-objectifs {
 
 .buton-apparition{
     margin-left: auto;
+    margin-top: 10px;
     margin-right: 10px;
     font-size: 3em;
 }
@@ -1076,9 +1095,12 @@ i:hover{
         width: 70%;
     }
 }
-@media screen {
-    
+@media screen  and (max-width:1250px){
+    .conteneur-apparition{
+        width: 75%;
+    }
 }
+    
 
 @media screen and (max-width:1300px) {
     .container{
@@ -1087,12 +1109,14 @@ i:hover{
         flex-direction: row;
         
     }
-    
+    .conteneur-apparition{
+        width: 80%;
+    }
     
     .row{
         
         flex-direction: column;
-        
+        justify-content: start;
         width: 50%;
         flex-grow: 1;
     }
@@ -1118,11 +1142,39 @@ i:hover{
 
 
 
+
+
 /*media screen pour l'appartion du menu en mode portable ou petit écran */
 @media screen  and (max-width:1000px) {
     .menu-hamburger{
         display: block;
         
+        
+    }
+    .apparition-titre{
+        font-size: 2em;
+    }
+
+    
+    
+    .div-apparitions-image{
+        height: 100%;
+        width: 80%;
+    }
+    .image-apparition{
+        flex-direction: column;
+        align-items: center;
+    }
+    p{
+        margin: 5px 0;
+    }
+    .apparitions-texte{
+        justify-content: center;
+    }
+    
+    .conteneur-apparition{
+        
+        width: 80%;
         
     }
     .texte-change{
