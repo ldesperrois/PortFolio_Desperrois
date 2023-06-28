@@ -430,7 +430,7 @@ path.two {
 }
 .apparition-titre{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 3em;
     margin-left: 20px;
 }
 
@@ -474,18 +474,14 @@ path.two {
 }
 .sous-titre-apparition{
     white-space: nowrap;
-    font-size: 1.5em;
+    font-size: 2em; 
     text-align: center;
 }
 .sous-titre-objectifs{
     margin-bottom: 3%;
-<<<<<<< HEAD
     margin-top: 3%;
     font-size: 2em;
     text-align: center;
-=======
-    font-size: 1.5em;
->>>>>>> c6483d292ffac71d38140c8696560acd46b3ef20
     white-space: nowrap;
 }
 .apparition-droite{
@@ -600,7 +596,7 @@ div.preuve> h1.sous-titre-objectifs {
     white-space: nowrap;
 }
 .texte-projets-apparition{
-    font-size: 16px;
+    font-size: 1em;
     text-align: center;
     font-weight: 800;
 }
@@ -1116,14 +1112,12 @@ i:hover{
         flex-direction: row;
         
     }
-<<<<<<< HEAD
     .image-apparition{
         flex-direction: column;
         align-items:center ;
-=======
+    }
     .conteneur-apparition{
         width: 80%;
->>>>>>> c6483d292ffac71d38140c8696560acd46b3ef20
     }
     
     .row{
@@ -1188,7 +1182,7 @@ i:hover{
     
     .conteneur-apparition{
         
-        width: 80%;
+        width: 100%;
         
     }
     .texte-change{
@@ -1262,7 +1256,12 @@ i:hover{
         justify-content: flex-start;
         align-self: center;
     }
-    
+    .texte-projets-apparition{
+        font-size: 24px;
+    }
+    .texte-objectif{
+        font-size: 24px;
+    }
 }
 @media screen and (max-width:680px){
     .titre_haut_depage{
