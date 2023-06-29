@@ -1119,7 +1119,9 @@ i:hover{
     .conteneur-apparition{
         width: 80%;
     }
-    
+    .div-apparitions-texte{
+        width: 100%;
+    }
     .row{
         
         flex-direction: column;
@@ -1185,6 +1187,7 @@ i:hover{
         width: 100%;
         
     }
+    
     .texte-change{
         text-align: left;
     }
