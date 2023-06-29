@@ -386,6 +386,7 @@ path.two {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 4%;
 }
 .conteneur-apparition{
   border-radius: 20px;
@@ -402,7 +403,7 @@ path.two {
     
 }
 .image-github{
-    width: 50%;
+    width: 80%;
 }
 .apparition-texte{
     width: 100%;
@@ -1121,6 +1122,7 @@ i:hover{
     }
     .div-apparitions-texte{
         width: 100%;
+        margin-left: 0;
     }
     .row{
         
@@ -1162,10 +1164,12 @@ i:hover{
         
     }
     .apparition-titre{
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
-    
+    .image-github{
+        width: 60%;
+    }
     
     .div-apparitions-image{
         height: 100%;
@@ -1183,9 +1187,7 @@ i:hover{
     }
     
     .conteneur-apparition{
-        
         width: 100%;
-        
     }
     
     .texte-change{
@@ -1234,7 +1236,6 @@ i:hover{
     }
     .liste_navbar{
         flex-direction: column;
-        
         align-items: center;
         margin-top: auto;
         margin-bottom: auto;
@@ -1263,7 +1264,13 @@ i:hover{
         font-size: 24px;
     }
     .texte-objectif{
-        font-size: 24px;
+        font-size: 25px;
+    }
+    .sous-titre-objectifs{
+        font-size: 2.5em;
+    }
+    .sous-titre-apparition{
+        font-size: 2.5em;
     }
 }
 @media screen and (max-width:680px){
