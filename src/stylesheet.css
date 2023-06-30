@@ -986,9 +986,19 @@ footer{
    
     
 }
-
+.contient{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.titre-reseaux{
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    white-space: nowrap;
+}
 input{
-    height: auto;
+    height: 50px;
     width: 60%;
     padding: 2%;
     outline: none;
@@ -1005,6 +1015,21 @@ input{
     justify-content: center;
     
     width: 100%;
+}
+
+.nom-reseau{
+    font-size: 30px;
+    color: #fff;
+    margin-left: auto;
+    text-align: center;
+    text-decoration: none;
+}
+.unreseau:hover{
+    background-color: #fff;
+    transition: background-color 0.5s;
+}
+.unreseau:hover .nom-reseau{
+    color: #000000;
 }
 .message-modal-input{
     display: flex;
@@ -1061,6 +1086,67 @@ textarea{
 
 i:hover{
     cursor: pointer;
+}
+.lien-reseau{
+    margin-right: 70px;
+}
+.logo-reseau{
+   width: 80;
+  -webkit-transition:-webkit-transform .9s; 
+  -moz-transition:-moz-transform .9s;       
+  -o-transition:-o-transform .9s;           
+  -ms-transition:-ms-transform .9s;        
+  transition:transform .9s
+  
+}
+
+.unreseau{
+    display: flex;
+    width: auto;
+    padding: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    flex-direction: row;
+    align-items: center;
+    border-color: #fff;
+    border-radius: 10px;
+    border-style: solid;
+}
+.contient-titre-reseau{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+.unreseau:hover .logo-reseau{
+    -webkit-transform:rotate(360deg); 
+  -moz-transform:rotate(360deg);
+  -o-transform:rotate(360deg); 
+  -ms-transform:rotate(360deg); 
+  transform:rotate(360deg);
+}
+.lesreseaux{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.lesreseaux2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.partie-reseau{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 @media screen and (max-width:1550px){

@@ -781,18 +781,39 @@
             <!--partie contact avec les mails-->
             <footer class="contact" id="contacte">
                 <h1 class="titre-contact">Contactez moi</h1>
-                <div class="formulaire-contact">
-                    <div class="modal-input">
-                        <input type="text" placeholder="Nom" id="fullName" required/> 
+                <div class="contient">
+                    <div class="lesreseaux">
+                        <h2 class="titre-reseaux"> Mail </h2>
+                        <div class="formulaire-contact">
+                            <div class="modal-input">
+                                <input type="text" placeholder="Nom" id="fullName" required/> 
+                            </div>
+                            <div class="modal-input">
+                                <input type="email"  placeholder="Email" id="email_id" required/>
+                            </div>
+                            <div class="message-modal-input">
+                                <textarea placeholder="Message" id="message" required ></textarea>
+                            </div>
+                            <div class="formulaire-bouton">
+                                <button class="bouton_contact" id="contacto" onclick="SendMail()">Send</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-input">
-                        <input type="email"  placeholder="Email" id="email_id" required   />
-                    </div>
-                    <div class="message-modal-input">
-                        <textarea placeholder="Message" id="message" required ></textarea>
-                    </div>
-                    <div class="formulaire-bouton">
-                        <button class="bouton_contact" id="contacto" onclick="SendMail()">Send</button>
+                    
+                    <div class="lesreseaux2">
+                        <div class="contient-titre-reseau">
+                            <h2 class="titre-reseaux">Mes Réseaux</h2>
+                        </div>
+                        <div class="partie-reseau">
+                            <div class="unreseau">
+                                <a class="lien-reseau" target="_blank" href="https://github.com/ldesperrois"><img class="logo-reseau" src="src/images/icons8-github-94.png"/></a>
+                                <a class="nom-reseau" href="https://github.com/ldesperrois">Github</a>
+                            </div>
+                            <div class="unreseau">
+                                <a class="lien-reseau" target="_blank" href="https://github.com/ldesperrois"><img class="logo-reseau" src="src/images/icons8-github-94.png"/></a>
+                                <a class="nom-reseau" href="https://github.com/ldesperrois">Github</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </footer>
