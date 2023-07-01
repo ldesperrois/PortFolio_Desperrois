@@ -1024,13 +1024,7 @@ input{
     text-align: center;
     text-decoration: none;
 }
-.unreseau:hover{
-    background-color: #fff;
-    transition: background-color 0.5s;
-}
-.unreseau:hover .nom-reseau{
-    color: #000000;
-}
+
 .message-modal-input{
     display: flex;
     flex-direction: row;
@@ -1087,9 +1081,7 @@ textarea{
 i:hover{
     cursor: pointer;
 }
-.lien-reseau{
-    margin-right: 70px;
-}
+
 .logo-reseau{
    width: 80;
   -webkit-transition:-webkit-transform .9s; 
@@ -1103,14 +1095,13 @@ i:hover{
 .unreseau{
     display: flex;
     width: auto;
+    justify-content: center;
     padding: 10px;
     margin-left: 2%;
     margin-right: 2%;
     flex-direction: row;
     align-items: center;
-    border-color: #fff;
-    border-radius: 10px;
-    border-style: solid;
+    
 }
 .contient-titre-reseau{
     display: flex;
@@ -1118,7 +1109,7 @@ i:hover{
     justify-content: center;
     margin-bottom: 2%;
 }
-.unreseau:hover .logo-reseau{
+.logo-reseau:hover{
     -webkit-transform:rotate(360deg); 
   -moz-transform:rotate(360deg);
   -o-transform:rotate(360deg); 
@@ -1146,7 +1137,7 @@ i:hover{
 .partie-reseau{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 @media screen and (max-width:1550px){
@@ -1165,7 +1156,15 @@ i:hover{
         width: 45%;
        
     }
-
+    .contient-texte{
+        opacity: 1;
+    }
+    .image-card_projets{
+        opacity: 0.4;
+    }
+    .card-projets{
+        background-image: linear-gradient(to right, #000000, #171216, #231e27, #292b3b, #283b4f);
+    }
     .card-projets-seuls{
         width: 55%;
     }
