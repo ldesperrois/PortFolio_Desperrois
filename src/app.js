@@ -53,7 +53,7 @@ var changement= 0;//variable qui permet le changement
   })
   //si on clique sur desperrois il faut enlever la navbar mobile 
   nom.addEventListener("click",function(){
-    console.log("test");
+    
     navLinks.classList.remove('mobile-menu');
     menuHamburger.src= 'src/images/icons8-menu.svg'
     changement=0;
@@ -70,7 +70,7 @@ jQuery(function($){
   const handleIntersect = function(entries,observer) {
    entries.forEach(function(entry){
     if(entry.intersectionRatio > ratio ){
-      console.log('visible')
+      
       entry.target.classList.add('reveal-visible')
       observer.unobserve(entry.target)
     }
@@ -90,7 +90,7 @@ jQuery(function($){
 jQuery(function($){
   let buttons = document.querySelectorAll('button');
   let navbar = document.querySelector('.ledivdelanavbar');
-  console.log(navbar)
+  
   buttons.forEach(button => {
     let target = button.getAttribute('data-target');
     if (target != null){
@@ -144,13 +144,13 @@ function SendMail(params){
 jQuery (function($){
   var lien = document.querySelectorAll('.lien-compétences-projets');
   let navbar = document.querySelector('.ledivdelanavbar');
-  console.log("je te baise");
+  
    lien.forEach(parcour => {
     var pointeur = parcour.getAttribute('data-target');
-    console.log("je te baise");
+    
     if(pointeur != null){
       parcour .addEventListener('click',async event => {
-        console.log("je te baise");
+        
         document.querySelector(`#${pointeur}`).classList.toggle('show');
         document.body.style.paddingRight = `${getScrollbarWidth()}px`;
 
