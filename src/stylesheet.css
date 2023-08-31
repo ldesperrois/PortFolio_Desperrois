@@ -338,7 +338,7 @@ li:hover .surligne{
   }
   
 .décale{
-    transform: skewX(15deg) 
+    text-align: center;
 }
   
 span:nth-child(2) {
@@ -416,7 +416,11 @@ path.two {
 }
 .image-github{
     width: 80%;
+    
 }
+
+
+
 .apparition-texte{
     width: 100%;
     text-align: center;
@@ -586,6 +590,9 @@ div.preuve> h1.sous-titre-objectifs {
     transition-delay: .1 s;
 
 }
+.special{
+    min-height: 417px;
+}
 
 .reval-3{
     transition-delay: .2s;
@@ -610,7 +617,7 @@ div.preuve> h1.sous-titre-objectifs {
     white-space: nowrap;
 }
 .texte-projets-apparition{
-    font-size: 1em;
+    font-size: 18px;
     text-align: center;
     font-weight: 800;
 }
@@ -618,6 +625,7 @@ div.preuve> h1.sous-titre-objectifs {
     font-size: auto;
     text-align: center;
     font-weight: 800;
+    font-size: 18px;
 }
 .sous-titre-objectifs{
     text-align: center;
@@ -1150,7 +1158,7 @@ i:hover{
   transform:rotate(360deg);
 }
 .lesreseaux{
-    width: 60%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -1159,7 +1167,7 @@ i:hover{
 }
 
 .lesreseaux2{
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: row;
     flex-grow: 1;
