@@ -130,11 +130,11 @@ function getScrollbarWidth() {
 
 
 
-function SendMail(params){
+function SendMail(nom,email,message){
   var params = {
-    from_name : document.getElementById("fullName").value,
-    email_id : document.getElementById("email_id").value,
-    message : document.getElementById("message").value
+    from_name : nom,
+    email_id : email,
+    message : message
   }
   emailjs.send("service_gba195l","template_usa5kza",params).then(function(res){
     alert("Sucess!" + res.status);
@@ -160,4 +160,71 @@ jQuery (function($){
     }
   })
 });
+
+
+
+function checkEmail(email) {
+  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+}
+
+
+function envoyerEmail(){
+  var bouton = document.getElementById('contacto');
+  var formulaire = document.getElementById('myform')
+  test=false;
+  
+  formulaire.addEventListener("submit",function(event){
+       var nom = document.getElementById('fullName').value;
+       var email = document.getElementById('email_id').value;
+       var message = document.getElementById('message').value;
+
+
+       if(nom.trim()===""){
+          var afficherreur1 = document.querySelector(".nom");
+          var enleve1 = document.getElementById('fullName');
+          afficherreur1.classList.add('apparait');
+          enleve1.addEventListener('focus',()=>{
+            afficherreur1.classList.remove('apparait');
+          })
+          
+          event.preventDefault();
+       }
+       
+
+       
+       if(message.trim()===""){
+          var afficherreur3 = document.querySelector(".message");
+          var enleve3 = document.getElementById('message');
+          afficherreur3.classList.add('apparait');
+          enleve3.addEventListener('focus',()=>{
+            afficherreur3.classList.remove('apparait');
+          })
+          
+          event.preventDefault();
+          
+       }
+       if(email.trim()==="" || checkEmail(email)===false){
+        var afficherreur2 = document.querySelector(".email");
+        var enleve2 =document.getElementById('email_id');
+        afficherreur2.classList.add('apparait');
+        enleve2.addEventListener('focus',()=>{
+          afficherreur2.classList.remove('apparait');
+        })
+        
+        
+        event.preventDefault();
+     }
+       else{
+        test=true;
+       }
+       if(test===true){
+          SendMail(nom,email,message);
+       }
+       
+  });
+}
+
+
+
 
